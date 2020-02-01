@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Vender</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Realizar nueva venta</ion-card-subtitle>
+      <ion-card-title>VENTA</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-label> Ingrese monto de la venta</ion-label>
+      <ion-input placeholder="$" [(ngModel)]="montovta"></ion-input>
+      <ion-label> Id de cliente</ion-label>
+      <ion-input placeholder="#" [(ngModel)]="idcliente"></ion-input>
+      <ion-label> Id de tarjeta </ion-label>
+      <ion-input placeholder="XXX" [(ngModel)]="idtarjeta"></ion-input>
+      <ion-button expand="full" (click)="vender()">Realizar Venta</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

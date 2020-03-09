@@ -1,5 +1,7 @@
 {
   "name": "CamiPago",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

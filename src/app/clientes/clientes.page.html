@@ -13,9 +13,9 @@
 
     <ion-card-content>
       <ion-label> Ingrese nombre del cliente</ion-label>
-      <ion-input placeholder="Nombre" [(ngModel)]="nombre"></ion-input>
-      <ion-label> Id de cliente</ion-label>
-      <ion-input placeholder="Apellido" [(ngModel)]="apellido"></ion-input>
+      <ion-input placeholder="Nombre" [(ngModel)]="nombre" id="inputNombre"></ion-input>
+      <ion-label> Apellido del cliente</ion-label>
+      <ion-input placeholder="Apellido" [(ngModel)]="apellido" id="inputApellido"></ion-input>
       <ion-button expand="full" (click)="agregarCliente()">Agregar</ion-button>
     </ion-card-content>
   </ion-card>

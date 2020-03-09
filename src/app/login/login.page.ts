@@ -46,6 +46,7 @@ export class LoginPage implements OnInit {
           }
         }, {
           text: 'Ingresar',
+          cssClass: 'ingresarButton',
           handler: data => {
             console.log('Confirm Ok');
             console.log(data);

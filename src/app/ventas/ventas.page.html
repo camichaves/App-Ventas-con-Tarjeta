@@ -14,12 +14,12 @@
 
     <ion-card-content>
       <ion-label> Ingrese monto de la venta</ion-label>
-      <ion-input placeholder="$" [(ngModel)]="montovta"></ion-input>
+      <ion-input placeholder="$" [(ngModel)]="montovta" id="inputMonto"></ion-input>
       <ion-label> Id de cliente</ion-label>
-      <ion-input placeholder="#" [(ngModel)]="idcliente"></ion-input>
+      <ion-input placeholder="#" [(ngModel)]="idcliente"id="inputCliente"></ion-input>
       <ion-label> Id de tarjeta </ion-label>
-      <ion-input placeholder="XXX" [(ngModel)]="idtarjeta"></ion-input>
-      <ion-button expand="full" (click)="vender()">Realizar Venta</ion-button>
+      <ion-input placeholder="XXX" [(ngModel)]="idtarjeta" id="inputTarjeta"></ion-input>
+      <ion-button expand="full" (click)="vender()" id="botonVender">Realizar Venta</ion-button>
     </ion-card-content>
   </ion-card>
 

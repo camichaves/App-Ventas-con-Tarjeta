@@ -52,7 +52,12 @@ export class ClientesPage implements OnInit {
       header: 'CLIENTE AGREGADO',
       subHeader: 'El nuevo cliente ha sido agregado al sistema. ',
       message: ' ID:' + resp.id.toString() + '. Gracias por utilizar nuestros servicios',
-      buttons: ['OK']
+      buttons: [
+        {
+          text: 'OK',
+          cssClass: 'okButton'
+        }
+      ]
     });
     await alert.present();
   }
@@ -63,7 +68,12 @@ export class ClientesPage implements OnInit {
       header: 'ERROR',
       subHeader: 'Hubo un problema al agregar el cliente',
       message: erro.toString(),
-      buttons: ['OK']
+      buttons: [
+        {
+          text: 'OK',
+          cssClass: 'okButton'
+        }
+      ]
     });
     await alert.present();
   }

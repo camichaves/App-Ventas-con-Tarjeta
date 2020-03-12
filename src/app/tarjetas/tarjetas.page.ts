@@ -55,7 +55,12 @@ export class TarjetasPage implements OnInit {
       header: 'TARJETA AGREGADA',
       subHeader: 'La nueva tarjeta ha sido agregado al sistema. ',
       message: ' ID:' + resp.id.toString() + '. Gracias por utilizar nuestros servicios',
-      buttons: ['OK']
+      buttons: [
+        {
+          text: 'OK',
+          cssClass: 'okButton'
+        }
+      ]
     });
     await alert.present();
   }
@@ -66,7 +71,12 @@ export class TarjetasPage implements OnInit {
       header: 'ERROR',
       subHeader: 'Hubo un problema al agregar la tarjeta',
       message: erro.toString(),
-      buttons: ['OK']
+      buttons: [
+        {
+          text: 'OK',
+          cssClass: 'okButton'
+        }
+      ]
     });
     await alert.present();
   }

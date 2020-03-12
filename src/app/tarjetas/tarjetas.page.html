@@ -12,15 +12,15 @@
 
     <ion-card-content>
       <ion-label> Ingrese el numero de la tarjeta</ion-label>
-      <ion-input placeholder="XXXX-XXXX-XXXX-XXXX" [(ngModel)]="numero"></ion-input>
+      <ion-input placeholder="XXXX-XXXX-XXXX-XXXX" [(ngModel)]="numero" id="inputNumero"></ion-input>
       <ion-label> Tipo de tarjeta</ion-label>
-      <ion-input placeholder="VISA o MC" [(ngModel)]="tipo"></ion-input>
+      <ion-input placeholder="VISA o MC" [(ngModel)]="tipo" id="inputTipo"></ion-input>
       <ion-label> Codigo de Seguridad</ion-label>
-      <ion-input placeholder="***" [(ngModel)]="cod" type="password"></ion-input>
+      <ion-input placeholder="***" [(ngModel)]="cod" type="password" id="inputCodigo"></ion-input>
       <ion-label> Fecha de Vencimiento</ion-label>
-      <ion-input placeholder="YYYYMM" [(ngModel)]="venc"></ion-input>
+      <ion-input placeholder="YYYYMM" [(ngModel)]="venc" id="inputVencimiento"></ion-input>
       <ion-label> Monto máximo de la tarjeta</ion-label>
-      <ion-input placeholder="$$$" [(ngModel)]="montomax"></ion-input>
+      <ion-input placeholder="$$$" [(ngModel)]="montomax" id="inputMontoMax"></ion-input>
       <ion-button expand="full" (click)="agregarTarjeta()">Agregar</ion-button>
     </ion-card-content>
   </ion-card>

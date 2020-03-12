@@ -1,0 +1,6 @@
+build-test:
+  stage: build-test
+  script:
+    - npm install
+    - ionic serve
+    - cypress run

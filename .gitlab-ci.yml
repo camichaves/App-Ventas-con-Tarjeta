@@ -1,5 +1,5 @@
 build-test:
-  stage: build-test
+  stage: build
   script:
     - npm install
     - ionic serve
